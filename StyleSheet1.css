@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+﻿@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
 
 /* start: global styles */
 body {
@@ -125,7 +125,7 @@ p.large-paragraph {
     display: none;
 }
 header {
-    background: #484d53;
+    background: transparent;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -564,7 +564,7 @@ footer small {
 
             nav ul li a.active,
             nav ul li a:hover {
-                color: ;
+                color: #009688;
             }
 }
 
@@ -636,7 +636,7 @@ footer small {
 
     #form-container {
         width: 100%;
-        padding: 2rem;
+        float: inherit;
     }
 
     #address-container {
@@ -814,4 +814,90 @@ footer small {
 }
 .property1 li{
 list-style: none; display: inline-block; margin: 0 20px; position: relative; margin-top: 25px;
+}
+#property-image-slider .slick-slide {
+    margin: 0 3px;
+}
+
+    #property-image-slider .slick-slide img {
+        height: 450px;
+        opacity: 0.75;
+        filter: blur(2px);
+    }
+
+    #property-image-slider .slick-slide.slick-center img {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+#property-image-slider .slick-prev, #property-image-slider .slick-next {
+    display: block;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 7px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 30px;
+    color: #00aeef;
+    z-index: 2;
+}
+
+#property-image-slider .slick-next {
+    right: 0;
+}
+
+.slider-options-container {
+    margin-top: 3px;
+}
+
+    .slider-options-container > a {
+        flex: 0 0 33%;
+        position: relative;
+    }
+
+    .slider-options-container img {
+        width: 100%;
+        display: block;
+    }
+
+    .slider-options-container .image-fade {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+        .slider-options-container .image-fade:hover {
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        .slider-options-container .image-fade span {
+            text-align: center;
+            position: absolute;
+            bottom: 1rem;
+            color: #fff;
+            width: 100%;
+            display: block;
+            font-size: 1.4rem;
+        }
+
+/* end: images slider styles */
+
+/* start: map/street view styles */
+
+#map, #street {
+    display: none;
+    height: 450px;
+    width: 100%;
+}
+#header-hero-container1 {
+    min-height: 4px;
+    height: 150px;
+    position: relative;
+    background-color: #484d53;
+}
+.photo{
+display:none;
 }
