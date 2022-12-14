@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
 /* start: global styles */
 
 body {
@@ -15,7 +15,6 @@ body {
 
 * {
     outline: none;
-
 }
 
     *:not(.slick-track):not(.slick-list) {
@@ -77,7 +76,7 @@ p {
 }
 
 button.rounded {
-    background: #009868 ;
+    background: #009868;
     border: none;
     color: #fff;
     font-size: 16px;
@@ -639,7 +638,6 @@ button.rounded {
 
 footer {
     background: #333;
-
     color: #777;
 }
 
@@ -1107,10 +1105,10 @@ footer small {
         font-size: 0.85rem;
     }
 }
+
 .background {
     background-color: #484d53;
 }
-.slick{
 
-    
+.slick {
 }
