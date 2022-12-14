@@ -1,15 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
+    <title>Home</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link href="StyleSheet1.css" type="text/css" rel="Stylesheet" />
-    <link rel="icon" type="image/x-icon" href="favicon.ic?">
+    <link rel="icon" type="image/x-icon" href="logo1.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -28,71 +28,55 @@
                     </button>
 
                     <ul id="nav-menu">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="properties.html">Properties</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li id="close-flyout"><span class="fas fa-times"></span></li>
                     </ul>
                 </nav>
             </div>
-            <div>
-
-            </div>
         </header>
 
         <section id="hero1">
-            <div class="fade">
-                <section id="contact">
-                    <div class="container">
+            <div class="back1"></div>
+            <div class="contact-form">
+                <form onsubmit="sendEmail(); reset; return false;">
+                    <h3>Contact Us</h3>
+                    <input type="text" placeholder="Your Name" id="name" required />
+                    <input type="email" placeholder="Your Email" id="email" required />
+                    <input type="text" placeholder="Your Number" id="number" required />
+                    <input type="text" placeholder="Property Code" id="propertycode" />
+                    <textarea rows="4" type="text" placeholder="Message" id="message"></textarea>
+                    <button type="submit">Send</button>
 
+                </form>
 
-                        <div class="flex">
-                            <div id="form-container">
-                                <h3>Contact Form</h3>
-                                <form>
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" />
-
-                                    <label for="email">Email</label>
-                                    <input type="text" id="email" />
-
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" />
-
-                                    <label for="message">Message</label>
-                                    <textarea id="message">Write your message here..</textarea>
-
-                                    <button class="rounded">Send Message</button>
-                                </form>
-                            </div>
-
-                            <div id="address-container">
-                                <label>Address</label>
-                                <a href="https://goo.gl/maps/xcM8rscwdvTJwqjU7">
-                                   46 Almoltaka Alarabi street,Sherton Heliopolis
-                                </a>
-
-                                <label>Phone</label>
-                                <a href="#">+201155512812</a>
-
-                                <label>Email Address</label>
-                                <a href="#">capitalkeyeg@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
             </div>
+
         </section>
     </div>
 
-    <section>
+
+    <section id="footer">
         <footer>
             <div class="flex container">
                 <div class="footer-about">
-                    <h5>About Capital Key</h5>
-                    <p>footer text</p>
+                    <div class="address">
+                        <label>Address</label>
+                        <a href="https://goo.gl/maps/xcM8rscwdvTJwqjU7">
+                            46 Almoltaka Alarabi street,Sherton Heliopolis
+                        </a>
+
+                        <label>Phone</label>
+                        <a href="tel:01000141410">+201000141410</a>
+
+                        <label>Email Address</label>
+                        <a href="mailto:capitalkeyeg@gmail.com">capitalkeyeg@gmail.com</a>
+
+                        <label>Whatsapp</label>
+                        <a href="https://wa.me/<+201000141410>">Chat with us</a>
+                    </div>
                 </div>
 
                 <div class="footer-quick-links">
@@ -120,9 +104,9 @@
 
         </footer>
     </section>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-$(function () {
+        $(function () {
             let headerElem = $('header');
             let logo = $('#logo');
             let navMenu = $('#nav-menu');
@@ -201,7 +185,20 @@ $(function () {
                 });
             });
             $(document).trigger('scroll');
-});
+        });
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "capitalkeyformentry@gmail.com",
+                Password: "Ysabek2005",
+                To: document.getElementById('email').value,
+                From: "capitalkeyformentry@gmail.com",
+                Subject: "new enquiry",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
     </script>
 </body>
 
