@@ -223,7 +223,10 @@ header ul.is-sticky li a {
 
 /* start: properties styles */
 #properties {
-    margin: 4rem 0 8rem;
+    margin: 4em;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
     position: relative;
 }
 
