@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -38,115 +38,243 @@
             </div>
         </header>
     </div>
+
+
+
         <section id="hero1">
-            <div class="fade">
-                <ul class="property1">
-                    <li>
-                        <div>
-                            <img src="sample.jpg" alt="Property 1" />
 
-                            <p class="price">$3,400,000</p>
-                            <span class="beds">6 beds</span>
-                            <span class="baths">4 baths</span>
-                            <span class="sqft">4,250 sqft.</span>
-                            <address>
-                                480 12th, Unit 14, San Francisco, CA
-                            </address>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="sample.jpg" alt="Property 1" />
+            <div class="property1">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('Alshorouq')">Alshorouq</button>
+                    <button class="btn" onclick="filterSelection('helio')"> New Heliopolis city</button>
+                    <button class="btn" onclick="filterSelection('cairo')"> New Cairo</button>
+                    <button class="btn" onclick="filterSelection('admin')"> Adminstrative Capital</button>
+                </div>
 
-                            <p class="price">$3,400,000</p>
-                            <span class="beds">6 beds</span>
-                            <span class="baths">4 baths</span>
-                            <span class="sqft">4,250 sqft.</span>
-                            <address>
-                                480 12th, Unit 14, San Francisco, CA
-                            </address>
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                <div class="container1">
+                    <ul>
+                        <li>
+                            <div class="filterDiv Alshorouq">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv helio">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv helio">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv helio">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv helio">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv helio">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv helio">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv helio">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv">
+                                <a href="properties/property14"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Duplex</span>
+                                    <span class="sqft">230 m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv">
+
+                                <a href="properties/property16"> <img src="https://lh3.googleusercontent.com/_6Wu9hHZzMbjmSMqHwX2qn9Pwl70vyYXqQxcqysDLzHt1rquKRz49IEOK18hdaOfHIZ9lrS89oDUjL1xsujptDe5zbBQeAVAxAiX5cILIYz4aUE88lcXrI-wYfxQ0nHvdpClZFkJ=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">185 m<sup>2</sup></span>
+                                    <address>
+                                        14, Cleopatra palace,
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv">
+
+                      
+                                <a href="properties/property13"> <img src="https://lh3.googleusercontent.com/e4GzWiFnHTdklxYgEJMAbcdMFkoMCbfYP8qqmAdDpAb0ZGhezEGHIX-6vXn94-sgtLQTR5SVJWqQ_R82eHEbBtdUyrhtmBO9mHptDHK7ybQGsyPPsqzvdrcyU6dnFT3f4FaTeNHI=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Penthouse</span>
+                                    <span class="sqft">400 m<sup>2</sup></span>
+                                    <address>
+                                        Greenland, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv">
+                                <a href="properties/property15"> <img src="https://lh3.googleusercontent.com/lk04lKhzwNkpeGPz4MIWhkipcKxcUmnGgmMPmfjlM4_7HzdJAvBshv1IFaa5S0Op_jQtmsk5VvpmEITi0jIL4_0SSKhRppl8ryQZIiHRK_4sRgE0_bccntRanfu3uoqq52IQoxkm=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">Townhouse</span>
+                                    <span class="sqft">m<sup>2</sup></span>
+                                    <address>
+                                        Merida, Al Shorouk, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterDiv">
+
+                                <a href="properties/property16"> <img src="https://lh3.googleusercontent.com/i80T5dJYdweVkJ3iRxECbQFxd-sTi0zipllvySqZIqoD8U3tXHsPzCjVdYK8IDd6wkjNClPaCMqImvP1kM1CVF2juRkW5TFU4z_1-woMT0EZzlmyM5eisjuPAlPGCP5aOS6e2V1c=w2400" width="200" height="190" /> </a>
+                                <div class="property-details">
+                                    <span class="sqft">164 m<sup>2</sup></span>
+                                    <address>
+                                        Korba Heights, New Heliopolis City, Cairo, Egypt
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                         </div>
-                    </li>
-                    <li>
-                        <img src="sample.jpg" alt="Property 1" />
-                        <div>
-                            <p class="price">$3,400,000</p>
-                            <span class="beds">6 beds</span>
-                            <span class="baths">4 baths</span>
-                            <span class="sqft">4,250 sqft.</span>
-                            <address>
-                                480 12th, Unit 14, San Francisco, CA
-                            </address>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="sample.jpg" alt="Property 1" />
-                        <div>
-                            <p class="price">$3,400,000</p>
-                            <span class="beds">6 beds</span>
-                            <span class="baths">4 baths</span>
-                            <span class="sqft">4,250 sqft.</span>
-                            <address>
-                                480 12th, Unit 14, San Francisco, CA
-                            </address>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="sample.jpg" alt="Property 1" />
-                        <div>
-                            <p class="price">$3,400,000</p>
-                            <span class="beds">6 beds</span>
-                            <span class="baths">4 baths</span>
-                            <span class="sqft">4,250 sqft.</span>
-                            <address>
-                                480 12th, Unit 14, San Francisco, CA
-                            </address>
-                        </div>
-                    </li>
-                </ul>
             </div>
+            <section id="footer">
+                <footer>
+                    <div class="flex container">
+                        <div class="footer-about">
+                            <div class="address">
+                                <label>Address</label>
+                                <a href="https://goo.gl/maps/xcM8rscwdvTJwqjU7">
+                                    46 Almoltaka Alarabi street,Sherton Heliopolis
+                                </a>
+
+                                <label>Phone</label>
+                                <a href="tel:01000141410">+201000141410</a>
+
+                                <label>Email Address</label>
+                                <a href="mailto:capitalkeyeg@gmail.com">capitalkeyeg@gmail.com</a>
+
+                                <label>Whatsapp</label>
+                                <a href="https://wa.me/+201000141410">Chat with us</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-quick-links">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="properties.html">Properties</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-quick-links">
+                            <h5>
+                                Follow Us
+                            </h5>
+                            <ul>
+
+
+                                <li><a href="https://www.facebook.com/capitalkeyproperties/"><span class="fab fa-facebook-f"></span></a></li>
+                                <li><a href="https://www.instagram.com/capitalkeyproperties/"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="https://eg.linkedin.com/company/capitalkeyproperties"><span class="fab fa-linkedin-in"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </footer>
+            </section>
         </section>
-   
-
-    <div class="back1"></div>
 
 
-    <footer>
-        <div class="flex container">
-            <div class="footer-about">
-                <h5>About Capital Key</h5>
-                <p>footer text</p>
-            </div>
-
-            <div class="footer-quick-links">
-                <h5>Quick Links</h5>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="properties.html">Properties</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-quick-links">
-                <h5>
-                    Follow Us
-                </h5>
-                <ul>
+    
 
 
-                    <li><a href="https://www.facebook.com/capitalkeyproperties/"><span class="fab fa-facebook-f"></span></a></li>
-                    <li><a href="https://www.instagram.com/capitalkeyproperties/"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="https://eg.linkedin.com/company/capitalkeyproperties"><span class="fab fa-linkedin-in"></span></a></li>
-                </ul>
-            </div>
-        </div>
 
 
-    </footer>
 
 
 
     <script>
-$(function () {
+        $(function () {
             let headerElem = $('header');
             let logo = $('#logo');
             let navMenu = $('#nav-menu');
@@ -225,7 +353,54 @@ $(function () {
                 });
             });
             $(document).trigger('scroll');
-});
+        });
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
     </script>
 </body>
 </html>
