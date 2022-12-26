@@ -428,7 +428,9 @@ button.rounded {
 /* end: nearby similar homes styles */
 
 /* start: property details styles */
-
+#property-info-details{
+    margin-bottom:100px;
+}
 #property-info-details .flex {
     margin-bottom: 2rem;
     flex-wrap: wrap;
@@ -1112,3 +1114,4 @@ footer small {
 
 .slick {
 }
+
